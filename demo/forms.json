@@ -1,0 +1,64 @@
+{
+  "ProjectList": {
+    "entity": "Project",
+    "title": "Projects",
+    "base": "/",
+    "template": {
+      "facelet": "/WEB-INF/templates/main.xhtml",
+      "define": "body"
+    },
+    "fields": {
+      "id": {
+        "label": "Id"
+      },
+      "key": {
+        "label": "Key"
+      },
+      "name": {
+        "label": "Name"
+      },
+      "description": {
+        "label": "Description"
+      }
+    }
+  },
+  "IssueList": {
+    "entity": "Issue",
+    "title": "Issues",
+    "base": "/",
+    "template": {
+      "facelet": "/WEB-INF/templates/main.xhtml",
+      "define": "body"
+    },
+    "fields": {
+      "id": {
+        "label": "Id"
+      },
+      "project": {
+        "label": "Project"
+      },
+      "title": {
+        "label": "Title"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "type": {
+        "label": "Type"
+      },
+      "status": {
+        "label": "Status"
+      },
+      "priority": {
+        "label": "Priority"
+      },
+      "labels": {
+        "label": "Labels"
+      },
+      "createdAt": {
+        "label": "Created At"
+      }
+    }
+  },
+  "indexTo": "/index.xhtml"
+}

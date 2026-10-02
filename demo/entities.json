@@ -1,0 +1,107 @@
+{
+  "Project": {
+    "fields": {
+      "id": {
+        "type": "Long",
+        "isId": true,
+        "generatedValue": "Identity"
+      },
+      "key": {
+        "type": "String",
+        "column": {
+          "name": "project_key",
+          "length": 20,
+          "unique": true,
+          "nullable": false
+        },
+        "label": "Project Key"
+      },
+      "name": {
+        "type": "String",
+        "column": {
+          "name": "project_name",
+          "length": 100,
+          "nullable": false
+        },
+        "label": "Name"
+      },
+      "description": {
+        "type": "String",
+        "column": {
+          "length": 500
+        },
+        "label": "Description"
+      }
+    }
+  },
+  "Issue": {
+    "table": "issue_",
+    "fields": {
+      "id": {
+        "type": "UUID",
+        "isId": true,
+        "generatedValue": "UUID"
+      },
+      "project": {
+        "type": "Project",
+        "manyToOne": true,
+        "joinColumn": {
+          "name": "project_id",
+          "nullable": false
+        },
+        "label": "Project"
+      },
+      "title": {
+        "type": "String",
+        "column": {
+          "length": 150,
+          "nullable": false
+        },
+        "label": "Title"
+      },
+      "description": {
+        "type": "String",
+        "column": {
+          "length": 2000
+        },
+        "label": "Description"
+      },
+      "type": {
+        "type": "enum",
+        "values": [
+          "TASK",
+          "BUG",
+          "FEATURE"
+        ],
+        "label": "Type"
+      },
+      "status": {
+        "type": "enum",
+        "values": [
+          "TODO",
+          "IN_PROGRESS",
+          "DONE"
+        ],
+        "label": "Status"
+      },
+      "priority": {
+        "type": "enum",
+        "values": [
+          "LOW",
+          "MEDIUM",
+          "HIGH"
+        ],
+        "label": "Priority"
+      },
+      "labels": {
+        "type": "String",
+        "list": true,
+        "label": "Labels"
+      },
+      "createdAt": {
+        "type": "LocalDateTime",
+        "label": "Created At"
+      }
+    }
+  }
+}

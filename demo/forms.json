@@ -35,13 +35,15 @@
         "label": "Id"
       },
       "project": {
-        "label": "Project"
+        "label": "Project",
+        "displayField": "name"
       },
       "title": {
         "label": "Title"
       },
       "description": {
-        "label": "Description"
+        "label": "Description",
+        "component": "textarea"
       },
       "type": {
         "label": "Type"

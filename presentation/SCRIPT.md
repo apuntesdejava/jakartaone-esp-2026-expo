@@ -554,13 +554,9 @@ La aplicación no está atada a Coffee Builder.
 
 ## 26:00--28:30 · Cierre
 
-Y por eso al comienzo les decía que Coffee Builder no pretende construir
-nuestra aplicación por nosotros.
+Y esto es lo que quería mostrarles: Coffee Builder ya hizo su trabajo.
 
-Su trabajo termina precisamente aquí.
-
-> **Coffee Builder genera la base.\
-> El desarrollador construye la aplicación.**
+A partir de aquí seguimos nosotros.
 
 Hoy recorrimos un solo camino: persistencia, modelo de aplicación y una
 interfaz con Jakarta Faces y PrimeFaces.
@@ -585,19 +581,14 @@ con los JSON y la secuencia utilizada para reproducirla:
 
 `apuntesdejava/jakartaone-esp-2026-expo`
 
-Si después quieren experimentar, modificar el modelo, cambiar los
-formularios o simplemente ver qué código genera, tienen todo ahí.
+Si quieren experimentar, modificar el modelo o simplemente ver qué
+código genera Coffee Builder, tienen todo disponible allí.
 
-Y me gustaría que se queden con una sola idea.
+Y si tuviera que resumir estos treinta minutos en una sola idea, sería
+esta:
 
-Automatizar el trabajo repetitivo no significa perder el control sobre
-nuestra aplicación.
-
-En este caso, la automatización termina dejándonos exactamente donde
-queremos estar:
-
-**con código Jakarta EE que podemos entender y continuar
-desarrollando.**
+> **Coffee Builder genera la base.\
+> El desarrollador construye la aplicación.**
 
 Muchas gracias.
 
